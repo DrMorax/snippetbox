@@ -10,7 +10,6 @@
       href="/static/img/favicon.ico"
       type="image/x-icon"
     />
-    <!-- Also link to some fonts hosted by Google -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700"
@@ -23,7 +22,9 @@
     <!-- Invoke the navigation template -->
     {{template "nav" .}}
     <main>{{template "main" .}}</main>
-    <footer>Powered by <a href="https://golang.org/">Go</a></footer>
+    <footer>
+      Powered by <a href="https://golang.org/">Go</a> in {{.CurrentYear}}
+    </footer>
   </body>
 </html>
 {{end}}

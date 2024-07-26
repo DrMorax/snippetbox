@@ -68,7 +68,7 @@ func main() {
 		ErrorLog: errorLog,
 		Handler: app.routes(),
 		TLSConfig: tlsConfig,
-		dleTimeout: time.Minute,
+		IdleTimeout: time.Minute,
 		ReadTimeout: 5 * time.Second,
 		WriteTimeout: 10 * time.Second,
 	}

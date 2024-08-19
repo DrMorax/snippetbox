@@ -21,7 +21,7 @@ Then install the required dependencies:
 ```
 cd snippetbox && go mod tidy
 ```
-This project uses (MySQL)[https://dev.mysql.com/downloads/installer/] database so you have to install it and create your own user for that database which will be used to make data operations like inserting and deleting snippets.
+This project uses [MySQL](https://dev.mysql.com/downloads/installer) database so you have to install it and create your own user for that database which will be used to make data operations like inserting and deleting snippets.
 These are the tables you need to create:
 ```
 CREATE DATABASE snippetbox CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
